@@ -1,0 +1,12 @@
+[project]
+name = "langchainlearn"
+version = "0.1.0"
+description = "学习LangChain框架，用于是什么Agent、RAG等AI应用！"
+requires-python = ">=3.10"
+dependencies = [
+    "langchain>=1.2.9",
+    "langchain-community>=0.4.1",
+    "langchain-deepseek>=1.0.1",
+    "langchain-openai>=1.1.7",
+    "python-dotenv>=1.2.1",
+]
