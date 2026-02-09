@@ -1,8 +1,6 @@
 from dotenv import load_dotenv
 from langchain_core.prompts import ChatPromptTemplate
 
-from src.utils.models import deep_seek_v3_stream
-
 prompt_template = ChatPromptTemplate.from_messages([
     ("system", "Translate the following from English into {language}"),
     ("user", "{text}")
@@ -18,8 +16,6 @@ if __name__ == "__main__":
             "text": "Hello, How are you? Fuck!"
         }
     )
-
-    deep_seek_v3_stream(prompt)
 
 
 
